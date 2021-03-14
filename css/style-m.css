@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 600;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+img {vertical-align: middle; max-width: 100%;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle; overflow: hidden;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute; left: -9999px;}
+.pc {display: none !important;}
+br.only-pc {content: '';}
+br.only-pc::after {content: '\00a0';}
+
+
+/* common */
+body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; color: #000000; background: #ffffff;}
+
+#wrapper {min-width: 320px; max-width: 1024px; margin: 0 auto; overflow: hidden;}
+
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.7); color: #ff4a32; font-size: 14px; transition: top 0.3s; z-index: 100000;}
+#skip-nav:focus {top: 0;}
+
+
+
+
+
+/* #wrapper {min-width: 1024px; overflow: hidden;} */
+
+
+
+
+#header {position: fixed; left: 0; top: 0; width: 100%; height: 80px; font-weight: 500; letter-spacing: 1px; font-size: 14px; background: pink; z-index: 10000;}
+#header div.checkout {position: absolute; left: 0; top: 0; width: 100%; line-height: 28px; font-size: 12px; letter-spacing: 2px; text-align: center; color: #ffffff; background: #000000;}  
+#header div.header-nav {position: absolute; left: 0; bottom: 0; width: 100%; height: 52px; background: tomato;}
+#header div.header-nav > h1 a{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 180px; background: rebeccapurple;}
+#header div.header-nav > h1 a img {width: 100%;}
+#header div.header-nav > ul#top-menu {position: absolute; right: 0; top: 50%; transform: translate(0,-50%); background: cornflowerblue;}
+#header div.header-nav > ul#top-menu > li {float: left; transition: all 0.5s; display: inline-block;}
+#header div.header-nav > ul#top-menu > li + li {margin-left: 20px;}
+#header div.header-nav > ul#top-menu > li a {display: inline-block; background: red;}
+#header div.header-nav > ul#top-menu > li a i {width: 80px;}
+/*
+#header div.header-nav > ul#top-menu {position: absolute; right: 0; top: 50%; transform: (0,-50%); background: cornflowerblue;}
+#header div.header-nav > ul#top-menu > li {float: left;}
+
+#header div.header-nav > ul {position: absolute; right: 0; top: 50%; transform: (0,-50%); background: lime;}
+#header div.header-nav > ul > li {float: left;} */
+
+
+#gnb {display: none;}
+/* 
+#header div.header-nav {position: relative; left: 0; top: 28px; width: 100%; height: 76px; background: #ffffff}
+#header div.header-nav h1 {position: absolute; left: 22px; top: 50%; transform: translate(0,-50%); width: 200px;}
+#header div.header-nav h1 a {display: block; transition: all 0.5s;}
+#header div.header-nav h1 a img {width: 100%;}
+#header div.header-nav h1 a:hover {opacity: 0.7;}
+
+#gnb {position: absolute; left: 20%; top: 50%; transform: translate(0,-50%); text-align: center; line-height: 76px; background: #ffffff;}
+#gnb > ul > li {float: left; transition: all 0.5s; position: relative; display: inline-block;}
+#gnb > ul > li + li {margin-left: 20px;}
+#gnb > ul > li a {display: inline-block;}
+#gnb > ul > li a:hover {color: #ff4a32;}
+
+#gnb > ul > li > ul {position: absolute; left: 0; top: 100%; width: 200px; background: #ffffff; box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); display: none;}
+#gnb > ul > li > ul > li a {display: block; padding: 10px; margin-left: 5px; text-align: left; line-height: 16px; }
+
+#gnb > ul > li:hover > ul {display: block;}
+
+#gnb > ul > li i {margin-left: 5px; transition: transform 0.3s;}
+#gnb > ul > li:hover i {transform: rotate(180deg);}
+
+#header div.header-nav > ul {position: absolute; right: 10px; top: 50%; transform: translate(0,-50%); color: #000000; display: block;}
+#header div.header-nav > ul > li {float: left; font-size: 18px; transition: all 0.5s;}
+#header div.header-nav > ul > li + li {margin-left: 10px;}
+#header div.header-nav > ul > li:hover {color: #ff4a32;}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* animation keyframes */
+
+/*
+@keyframes show-up {
+  0% {transform: translate(0, 50px); opacity: 0;}
+  100% {transform: translate(0, 0); opacity: 1;}
+}
+@keyframes show-up2 {
+  0% {transform: translate(-50%, 50px); opacity: 0;}
+  100% {transform: translate(-50%, 0); opacity: 1;}
+}
+@keyframes btn-effect-right {
+  0% {transform: translate(0, 0);}
+  100% {transform: translate(5px, 0);}
+}
+*/
+
