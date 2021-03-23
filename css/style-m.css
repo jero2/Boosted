@@ -41,64 +41,83 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #header div.header-nav {position: absolute; left: 0; bottom: 0; width: 100%; height: 52px; background: tomato;}
 #header div.header-nav > h1 a{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 180px; background: rebeccapurple;}
 #header div.header-nav > h1 a img {width: 100%;}
-#header div.header-nav > ul#top-menu {position: absolute; right: 0; top: 50%; transform: translate(0,-50%); background: cornflowerblue;}
-#header div.header-nav > ul#top-menu > li {float: left; transition: all 0.5s; display: inline-block;}
-#header div.header-nav > ul#top-menu > li + li {margin-left: 20px;}
-#header div.header-nav > ul#top-menu > li a {display: inline-block; background: red;}
-#header div.header-nav > ul#top-menu > li a i {width: 80px;}
+#header div.header-nav > ul#top-menu {position: absolute; right: 10px; top: 50%; transform: translate(0,-50%); background: cornflowerblue;}
+#header div.header-nav > ul#top-menu > li {float: left; transition: all 0.5s; display: block;}
+#header div.header-nav > ul#top-menu > li + li {margin-left: 10px;}
+#header div.header-nav > ul#top-menu > li a {display: inline-block; font-size: 18px; background: red;}
+
+#header #gnb a.QUICK {position: absolute; left: 10px; top: 50%; transform: translate(0,-50%); background: tan;}
+#header #gnb a.QUICK::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
+#header #gnb a.QUICK > span {color: transparent;}
+#header #gnb a.QUICK::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
+
+#header #gnb ul {position: relative; left: 0; top: 52px; width: 100%; height: 100vh; background: pink; display: none;}
+#header #gnb ul li a{display: block; padding-left: 20px; padding-top: 10px; font-size: 12px; font-weight: 500; letter-spacing: 1px; transition: all 0.5s;}
+#header #gnb ul li a:hover {color: #ff4a32;}
+#header #gnb ul li + li {margin-top: 10px;} 
+#header #gnb ul li a.toggle {position: relative; left: 0; top: 0; background: red;}
+#header #gnb ul li a.toggle i {position: absolute; right: 10px; bottom: 0; font-size: 14px; transition: transform 0.3s;}
+#header #gnb ul li a.toggle:hover i {transform: rotate(180deg);}
+/*여기부터 다시*/
+#header #gnb ul li > ul {background: yellow;}
+
+
+
 /*
-#header div.header-nav > ul#top-menu {position: absolute; right: 0; top: 50%; transform: (0,-50%); background: cornflowerblue;}
-#header div.header-nav > ul#top-menu > li {float: left;}
+#header a.toggle {position: absolute; right: 30px; top: 50%; transform: translate(0, -50%); width: 24px; height: 16px; z-index: 10;}
+#header a.toggle::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
+#header a.toggle span {position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 100%; height: 2px; background: #000000; overflow: hidden; text-indent: -9999px; transition: all 0.3s;}
+#header a.toggle::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
+#wrapper.open #header a.toggle::before {top: 50%; transform: rotate(35deg) translate(0, -50%);}
+#wrapper.open #header a.toggle span {opacity: 0;}
+#wrapper.open #header a.toggle::after {bottom: 50%; transform: rotate(-35deg) translate(0, 50%);}
 
-#header div.header-nav > ul {position: absolute; right: 0; top: 50%; transform: (0,-50%); background: lime;}
-#header div.header-nav > ul > li {float: left;} */
-
-
-#gnb {display: none;}
-/* 
-#header div.header-nav {position: relative; left: 0; top: 28px; width: 100%; height: 76px; background: #ffffff}
-#header div.header-nav h1 {position: absolute; left: 22px; top: 50%; transform: translate(0,-50%); width: 200px;}
-#header div.header-nav h1 a {display: block; transition: all 0.5s;}
-#header div.header-nav h1 a img {width: 100%;}
-#header div.header-nav h1 a:hover {opacity: 0.7;}
-
-#gnb {position: absolute; left: 20%; top: 50%; transform: translate(0,-50%); text-align: center; line-height: 76px; background: #ffffff;}
-#gnb > ul > li {float: left; transition: all 0.5s; position: relative; display: inline-block;}
-#gnb > ul > li + li {margin-left: 20px;}
-#gnb > ul > li a {display: inline-block;}
-#gnb > ul > li a:hover {color: #ff4a32;}
-
-#gnb > ul > li > ul {position: absolute; left: 0; top: 100%; width: 200px; background: #ffffff; box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); display: none;}
-#gnb > ul > li > ul > li a {display: block; padding: 10px; margin-left: 5px; text-align: left; line-height: 16px; }
-
-#gnb > ul > li:hover > ul {display: block;}
-
-#gnb > ul > li i {margin-left: 5px; transition: transform 0.3s;}
-#gnb > ul > li:hover i {transform: rotate(180deg);}
-
-#header div.header-nav > ul {position: absolute; right: 10px; top: 50%; transform: translate(0,-50%); color: #000000; display: block;}
-#header div.header-nav > ul > li {float: left; font-size: 18px; transition: all 0.5s;}
-#header div.header-nav > ul > li + li {margin-left: 10px;}
-#header div.header-nav > ul > li:hover {color: #ff4a32;}
- */
+#quick-link {position: fixed; right: -310px; top: 0; width: 310px; height: 100%; background: #ffffff; overflow: auto; transition: right 0.3s;}
+#wrapper.open #quick-link {right: 0;}
+#quick-link > ul {padding: 60px 20px 100px 20px;}
+#quick-link > ul > li + li {border-top: 1px solid #e0e0e0;}
+#quick-link > ul > li > a {display: block; line-height: 56px; padding-left: 15px;}
+*/
 
 
+#footer div.pros{position: relative; left: 0; top: 0; width: 100%; height: auto; background: #000000; color: #ffffff;  overflow: hidden;}
+#footer div.pros ul {text-align: center; margin-top: 18px; margin-bottom: 30px;}
+#footer div.pros ul > li {padding: 20px; display: block; }
+#footer div.pros ul > li img {width: 26%;}
+#footer div.pros ul > li em {font-size: 32px; font-weight: 700; line-height: 1.125; display: block; margin-top: 10px; margin-bottom: 24px;}
+#footer div.pros ul > li p {padding: 0 30px; line-height: 1.5;}
+
+#footer div.explain {position: relative; left: 0; top: 0; width: 100%; padding: 30px; background: #f7f7f7;}
+#footer div.explain > img {width: 30%; transition: all 0.5s;}
+#footer div.explain > img:hover {opacity: 0.7;}
+#footer div.explain > div.footer-link {width: 90%;}
+#footer div.explain > div.footer-link em {font-size: 20px; font-weight: 600; line-height: 2.5;}
+#footer div.explain > div.footer-link ul {font-size: 14px; line-height: 1.5;}
+#footer div.explain > div.footer-link ul a { transition: all 0.5s;}
+#footer div.explain > div.footer-link ul a:hover {color: #ff4a32;}
+
+#footer div.explain > div.about {width: 90%;}
+#footer div.explain > div.about em {font-size: 20px; font-weight: 600; line-height: 2.5;}
+#footer div.explain > div.about p {margin-top: 10px; font-size: 14px; line-height: 1.5; }
+#footer div.explain > div.about address {margin-top: 15px;}
+#footer div.explain > div.about address > span {display: block; font-size: 14px; line-height: 1.5;}
 
 
-
-
-
-
-
-
-
-
-
+#footer div.extra {position: relative; left: 0; top: 0; width: 100%; height: 120px; background: #ffffff;}
+#footer div.extra p.copyright {position: absolute; left: 20px; top: 20px; width: 60%; font-size: 13px; }
+#footer div.extra p.copyright a {color: #ff4a32;}
+#footer div.extra ul.payment {position: absolute; right: 20px; top: 20px; width: 24%; overflow: hidden; }
+#footer div.extra ul.payment li {float: left; display: block; margin-left: 3px;}
+#footer div.extra ul.payment li i { font-size: 28px; color:#000000;}
 
 
 
 
 
+
+
+
+/*main*/
 
 
 

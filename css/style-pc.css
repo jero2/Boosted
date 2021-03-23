@@ -66,7 +66,7 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #header.on div.header-nav h1 a:hover {opacity: 0.7;}
 
 #gnb.on {position: absolute; left: 20%; top: 50%; transform: translate(0,-50%); text-align: center; font-size: 14px; font-weight: 500; letter-spacing: 1px; line-height: 70px; background: #ffffff;}
-#gnb.on > ul > li {float: left; transition: all 0.5s; position: relative; display: inline-block;}
+#gnb.on > ul > li {float: left; transition: all 0.5s; position: relative; display: 'block';}
 #gnb.on > ul > li + li {margin-left: 20px;}
 #gnb.on > ul > li a {display: inline-block;}
 #gnb.on > ul > li a:hover {color: #ff4a32;}
@@ -112,9 +112,8 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #footer div.extra {position: relative; left: 0; top: 0; width: 100%; height: 70px;}
 #footer div.extra p.copyright {position: absolute; left: 40px; top: 22px; font-size: 13px;}
 #footer div.extra p.copyright a {color: #ff4a32; }
-
 #footer div.extra ul.payment {position: absolute; right: 40px; top: 22px; overflow: hidden;}
-#footer div.extra ul.payment li {float: left; display: inline-block;}
+#footer div.extra ul.payment li {float: left; display: block;}
 #footer div.extra ul.payment li + li {margin-left: 3px;}
 #footer div.extra ul.payment li i {font-size: 28px; color:#000000;}
 
@@ -140,38 +139,7 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 a.btn {display: inline-block; box-sizing: border-box; min-width: 200px; line-height: 1.5; padding: calc(0.375em - 1px) 2em; font-size: 14px; text-align: center; border-radius: 35px; background-color: #ff4a32; border: 1px solid transparent; color: #ffffff; transition: background-color 0.2s ease-in-out;}
 a.btn:hover {background-color: #606060;}
 a.btn:hover.click {border: 1px solid rgba(255, 74, 50, 0.7); }
-/*
-font-size: 1rem;
-    border-radius: 35px;
-    width: auto;
-    line-height: inherit;
-    height: auto;
-    max-width: 100%;
-    white-space: normal;
 
-font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0px;
-    background-color: white;
-    border-color: #dbdbdb;
-    border-width: 1px;
-    color: #363636;
-    cursor: pointer;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center;
-    padding-bottom: calc(0.375em - 1px);
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: calc(0.375em - 1px);
-    text-align: center;
-    text-transform: none;
-    transition: background 0.2s ease-in-out;
-    white-space: nowrap;
-*/
 
 
 /*
