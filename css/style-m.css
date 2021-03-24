@@ -46,38 +46,57 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #header div.header-nav > ul#top-menu > li + li {margin-left: 10px;}
 #header div.header-nav > ul#top-menu > li a {display: inline-block; font-size: 18px; background: red;}
 
-#header #gnb a.QUICK {position: absolute; left: 10px; top: 50%; transform: translate(0,-50%); background: tan;}
-#header #gnb a.QUICK::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
-#header #gnb a.QUICK > span {color: transparent;}
-#header #gnb a.QUICK::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
+#header #gnb a.QUICK {position: absolute; left: 10px; top: 50%; transform: translate(0,-50%); width: 18px; height: 16px; z-index: 10; background: tan;}
+#header #gnb a.QUICK::before {content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 2px; background: #000000; transition: all 0.3s;}
+#header #gnb a.QUICK > span {position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 18px; height: 2px; background: #000000; transition: all 0.3s; text-indent: -9999px;}
+#header #gnb a.QUICK::after {content: ''; position: absolute; left: 0; bottom: 0; width: 18px; height: 2px; background: #000000; transition: all 0.3s;}
+#wrapper.open #header #gnb a.QUICK::before {top: 50%; transform: rotate(35deg) translate(0, -50%);}
+#wrapper.open #header #gnb a.QUICK span {opacity: 0;}
+#wrapper.open #header #gnb a.QUICK::after {bottom: 50%; transform: rotate(-35deg) translate(0, 50%);}
 
-#header #gnb ul {position: relative; left: 0; top: 52px; width: 100%; height: 100vh; background: pink; display: none;}
-#header #gnb ul li a{display: block; padding-left: 20px; padding-top: 10px; font-size: 12px; font-weight: 500; letter-spacing: 1px; transition: all 0.5s;}
-#header #gnb ul li a:hover {color: #ff4a32;}
-#header #gnb ul li + li {margin-top: 10px;} 
-#header #gnb ul li a.toggle {position: relative; left: 0; top: 0; background: red;}
-#header #gnb ul li a.toggle i {position: absolute; right: 10px; bottom: 0; font-size: 14px; transition: transform 0.3s;}
-#header #gnb ul li a.toggle:hover i {transform: rotate(180deg);}
-/*여기부터 다시*/
-#header #gnb ul li > ul {background: yellow;}
+#header #gnb > ul {position: relative; left: 0; top: 52px; width: 100%; height: 100vh; background: #ffffff; display: none;}
+#header #gnb > ul li {padding-left: 20px; padding-top: 10px; font-size: 12px; font-weight: 500; letter-spacing: 1px; line-height: 1.5; background: tomato; transition: all 0.5s;}
+#header #gnb > ul li a{display: block; padding-bottom: 8px;}
+#header #gnb > ul li a:hover {color: #ff4a32;}
+#header #gnb > ul li a.toggle {position: relative; left: 0; top: 0; display: block; background: yellow;}
+#header #gnb > ul li a.toggle i {position: absolute; right: 20px; top: 50%; transform: translate(0,-50%); transition: all 0.5s; background: wheat;}
+#header #gnb > ul li a.toggle i:hover {transform: rotate(180deg);}
 
+#header #gnb > ul li > ul {display: none;}
+#header #gnb > ul li:hover > ul {display: block;}
+#header #gnb > ul li:hover > ul li {position: relative; left: 0; top: 0; line-height: 1.5; font-size: 14px;  background: lightgreen}
+#header #gnb > ul li:hover > ul li::after{content: ''; position: absolute; left: 0; top: 0; width: 1.5px; height: 100%; background: #000000;}
 
+#header.on {position: fixed; left: 0; top: 0; width: 100%; height: 52px; font-weight: 500; letter-spacing: 1px; font-size: 14px; background: pink; z-index: 10000;}
+#header.on div.checkout {position: absolute; left: 0; top: 0; width: 100%; line-height: 28px; font-size: 12px; letter-spacing: 2px; text-align: center; color: #ffffff; background: #000000; display: none;}  
+#header.on div.header-nav {position: absolute; left: 0; bottom: 0; width: 100%; height: 52px; background: tomato;}
+#header.on div.header-nav > h1 a{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 180px; background: rebeccapurple;}
+#header.on div.header-nav > h1 a img {width: 100%;}
+#header.on div.header-nav > ul#top-menu {position: absolute; right: 10px; top: 50%; transform: translate(0,-50%); background: cornflowerblue;}
+#header.on div.header-nav > ul#top-menu > li {float: left; transition: all 0.5s; display: block;}
+#header.on div.header-nav > ul#top-menu > li + li {margin-left: 10px;}
+#header.on div.header-nav > ul#top-menu > li a {display: inline-block; font-size: 18px; background: red;}
 
-/*
-#header a.toggle {position: absolute; right: 30px; top: 50%; transform: translate(0, -50%); width: 24px; height: 16px; z-index: 10;}
-#header a.toggle::before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
-#header a.toggle span {position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 100%; height: 2px; background: #000000; overflow: hidden; text-indent: -9999px; transition: all 0.3s;}
-#header a.toggle::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: #000000; transition: all 0.3s;}
-#wrapper.open #header a.toggle::before {top: 50%; transform: rotate(35deg) translate(0, -50%);}
-#wrapper.open #header a.toggle span {opacity: 0;}
-#wrapper.open #header a.toggle::after {bottom: 50%; transform: rotate(-35deg) translate(0, 50%);}
+#header.on #gnb a.QUICK {position: absolute; left: 10px; top: 50%; transform: translate(0,-50%); width: 18px; height: 16px; z-index: 10; background: tan;}
+#header.on #gnb a.QUICK::before {content: ''; position: absolute; left: 0; top: 0; width: 18px; height: 2px; background: #000000; transition: all 0.3s;}
+#header.on #gnb a.QUICK > span {position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 18px; height: 2px; background: #000000; transition: all 0.3s; text-indent: -9999px;}
+#header.on #gnb a.QUICK::after {content: ''; position: absolute; left: 0; bottom: 0; width: 18px; height: 2px; background: #000000; transition: all 0.3s;}
+#wrapper.open #header.on #gnb a.QUICK::before {top: 50%; transform: rotate(35deg) translate(0, -50%);}
+#wrapper.open #header.on #gnb a.QUICK span {opacity: 0;}
+#wrapper.open #header.on #gnb a.QUICK::after {bottom: 50%; transform: rotate(-35deg) translate(0, 50%);}
 
-#quick-link {position: fixed; right: -310px; top: 0; width: 310px; height: 100%; background: #ffffff; overflow: auto; transition: right 0.3s;}
-#wrapper.open #quick-link {right: 0;}
-#quick-link > ul {padding: 60px 20px 100px 20px;}
-#quick-link > ul > li + li {border-top: 1px solid #e0e0e0;}
-#quick-link > ul > li > a {display: block; line-height: 56px; padding-left: 15px;}
-*/
+#header.on #gnb > ul {position: relative; left: 0; top: 52px; width: 100%; height: 100vh; background: #ffffff; display: none;}
+#header.on #gnb > ul li {padding-left: 20px; padding-top: 10px; font-size: 12px; font-weight: 500; letter-spacing: 1px; line-height: 1.5; background: tomato; transition: all 0.5s;}
+#header.on #gnb > ul li a{display: block; padding-bottom: 8px;}
+#header.on #gnb > ul li a:hover {color: #ff4a32;}
+#header.on #gnb > ul li a.toggle {position: relative; left: 0; top: 0; display: block; background: yellow;}
+#header.on #gnb > ul li a.toggle i {position: absolute; right: 20px; top: 50%; transform: translate(0,-50%); transition: all 0.5s; background: wheat;}
+#header.on #gnb > ul li a.toggle i:hover {transform: rotate(180deg);}
+
+#header.on #gnb > ul li > ul {display: none;}
+#header.on #gnb > ul li:hover > ul {display: block;}
+#header.on #gnb > ul li:hover > ul li {position: relative; left: 0; top: 0; line-height: 1.5; font-size: 14px;  background: lightgreen}
+#header.on #gnb > ul li:hover > ul li::after{content: ''; position: absolute; left: 0; top: 0; width: 1.5px; height: 100%; background: #000000;}
 
 
 #footer div.pros{position: relative; left: 0; top: 0; width: 100%; height: auto; background: #000000; color: #ffffff;  overflow: hidden;}
@@ -119,11 +138,10 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 
 /*main*/
 
+#main > #main-visual {position: relative; left: 0;  top: 0; width: 100%; height: 500px; overflow: hidden; margin-top: 52px; background: pink;}
 
-
-
-
-
+#main > #main-visual h2 {position: absolute; left: 50%; top: 54%; transform: translate(-50%,0); text-align: center; background: powderblue;}
+#main > #main-visual p {position: absolute; left: 50%; top: 66%; transform: translate(-50%,0); text-align: center; background: cornflowerblue;}
 
 /* animation keyframes */
 
