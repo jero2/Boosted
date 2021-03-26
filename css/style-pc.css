@@ -134,6 +134,29 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #main > section#companys ul li {float: left;}
 #main > section#companys ul li + li {margin-left: 100px;}
 
+#main > section#looking {position: relative; left: 0; top: 0; width: 100%; text-align: center; background: pink;}
+#main > section#looking h2 {font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 50px; background: lightgray;}
+#main > section#looking p {font-size: 15px; font-weight: 400; padding: 0 360px; margin: 16px 0; }
+#main > section#looking em {font-size: 15px; font-weight: 500;}
+
+#main > section#looking > div.shop2 {width: 100%; background: lightblue;}
+#main > section#looking > div.shop2 ul {position: relative; left: 0; top: 0; width: 80%; display: inline-block; overflow: hidden; height: 500px; background: tomato;}
+#main > section#looking > div.shop2 ul > li {float: left;}
+/* #main > section#looking > div.shop2 li > a img {width: 580px;} */
+
+/* 
+#main > section#looking > div.shop2 {position: relative; left: 0; top: 0; width: 100%; text-align: center; background: lightblue;}
+#main > section#looking > div.shop2 > ul {display: inline-block; overflow: hidden; padding: 0 100px; background: lightcoral; }
+#main > section#looking > div.shop2 > ul > li {float: left; }
+#main > section#looking > div.shop2 > ul li + li {margin-left: 100px;}
+#main > section#looking > div.shop2 > ul li > img {width: 300px; background: lightslategray;} */
+
+/*
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+text-transform: none;
+    */
 
 /* module */
 a.btn {display: inline-block; box-sizing: border-box; min-width: 200px; line-height: 1.5; padding: calc(0.375em - 1px) 2em; font-size: 14px; text-align: center; border-radius: 35px; background-color: #ff4a32; border: 1px solid transparent; color: #ffffff; transition: background-color 0.2s ease-in-out;}
