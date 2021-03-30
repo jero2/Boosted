@@ -30,7 +30,7 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background: rgba(0, 0, 0, 0.7); color: #ff4a32; font-size: 14px; transition: top 0.3s; z-index: 100000;}
 #skip-nav:focus {top: 0;}
 
-/* 완전위에 header 
+/* header 완전위에
 #header {position: fixed; left: 0; top: 0; width: 100%; height: 104px; font-weight: 500; letter-spacing: 1px; font-size: 14px;  z-index: 10000; }
 #header div.checkout {position: absolute; left: 0; top: 0; width: 100%; line-height: 28px; font-size: 12px; letter-spacing: 2px; text-align: center; color: #ffffff; background: #000000;}     
 #header div.header-nav {position: relative; left: 0; top: 28px; width: 100%; height: 76px; background: #ffffff; }
@@ -81,6 +81,7 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #header.on div.header-nav > ul > li {float: left; font-size: 18px; transition: all 0.5s;}
 #header.on div.header-nav > ul > li + li {margin-left: 10px;}
 #header.on div.header-nav > ul > li:hover {color: #ff4a32;} 
+
 
 #footer div.pros {position: relative; left: 0; top: 0; width: 100%; height: auto;  background: #000000; color: #ffffff;  overflow: hidden;}
 #footer div.pros ul {text-align: center; padding: 20px 0px; }   
