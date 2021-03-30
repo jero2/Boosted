@@ -139,21 +139,79 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 
 /*main*/
 
-#main > #main-visual {position: relative; left: 0;  top: 0; width: 100%; height: 600px; overflow: hidden; margin-top: 52px; background: pink;}
+#main > #main-visual {position: relative; left: 0;  top: 0; width: 100%; height: 600px; overflow: hidden; margin-top: 52px; }
 #main > #main-visual img {position: absolute; left: 0; top: 0; width: 100%;}
-#main > #main-visual h2 {position: absolute; left: 50%; top: 45%; transform: translate(-50%,0); text-align: center; font-size: 27px; font-weight: 700; background: powderblue;}
-#main > #main-visual p {position: absolute; left: 50%; top: 58%; transform: translate(-50%,0); text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 1px; background: cornflowerblue;}
-#main > #main-visual ul {position: absolute; left: 50%; top: 70%; transform: translate(-50%,0); width: 100%; text-align: center; background: yellow;}
+#main > #main-visual h2 {position: absolute; left: 50%; top: 40%; transform: translate(-50%,0); width: 100%; text-align: center; font-size: 27px; font-weight: 700;}
+#main > #main-visual p {position: absolute; left: 50%; top: 52%; transform: translate(-50%,0); width: 90%; text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 1px;}
+#main > #main-visual ul {position: absolute; left: 50%; top: 62%; transform: translate(-50%,0); width: 100%; text-align: center;}
 #main > #main-visual ul li {margin: 10px;}
+
+#main > section#companys {left: 0; top: 0; width: 100%; text-align: center; background:#000000;}
+#main > section#companys ul {overflow: hidden; margin: 18px 0; }
+#main > section#companys ul li {display: inline-block;  margin: 10px 50px;}
+
+#main > section#looking {position: relative; left: 0; top: 0; text-align: center; padding: 20px; padding-bottom: 20px; }
+#main > section#looking h2 {font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 50px;}
+#main > section#looking p {position: relative; font-size: 15px; font-weight: 400; margin: 16px 0; }
+#main > section#looking > p::after {content: ''; position: absolute; left: 50%; top: 130%; transform: translate(-50%,0); width: 70px; height: 2px; background: #cfcfcf;}
+#main > section#looking em {font-size: 15px; font-weight: 500;}
+#main > section#looking ul.shop2 {overflow: hidden; width: 100%; margin-top: 74px; text-align: center;}
+#main > section#looking ul.shop2 li {display: inline-block;}
+#main > section#looking ul.shop2 li a {position: relative; left: 0; top: 0; width: 100%; overflow: hidden; display: block;}
+#main > section#looking ul.shop2 li + li {margin-top:  20px;}
+#main > section#looking ul.shop2 li a > img {display: inline-block; width: 100%; transition: all 0.3s; opacity: 0.8;}
+#main > section#looking ul.shop2 li > a:hover img {transform: scale(1.1);}
+#main > section#looking ul.shop2 li > a span {position: absolute; left: 50%; top: 42%; transform: translate(-50%,-50%); width: 6%; }
+#main > section#looking ul.shop2 li > a em{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%; color: #ffffff; line-height: 1.2; font-weight: 700; font-size: 20px; letter-spacing: 0px; opacity: 1;}
+#main > section#looking ul.shop2 li > a p {position: absolute; left: 50%; top: 54%; transform: translate(-50%,-50%); color: #ffffff; line-height: 1.25; font-size: 20px; width: 100%; opacity: 1;}
+
+#main > section#skateboards {position: relative; left: 0; top: 0; width: 100%; height: 600px; background: url(../img/main/boosted_shop_main.png) top center no-repeat; background-size: 100%; overflow: hidden; }
+#main > section#skateboards span {position: absolute; left: 50%; bottom:50%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center;}
+#main > section#skateboards h2 {position: absolute; left: 50%; bottom:42%; transform: translate(-50%, 0); width:100%; font-size: 27px; font-weight: 700; line-height: 1.125; text-align: center; padding: 0 10px;}
+#main > section#skateboards p {position: absolute; left: 50%; bottom:28%; transform: translate(-50%, 0); width: 90%; font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center;}
+#main > section#skateboards a.btn {position: absolute; left: 50%; bottom:18%; transform: translate(-50%, 0);} 
+
+#main > section#boosted {position: relative; left: 0; top: 0; padding: 20px;}
+#main > section#boosted ul {display: inline-block; line-height: 100%; overflow: hidden;}
+#main > section#boosted ul li {width: 100%; display: block;}
+#main > section#boosted ul li + li {margin-top: 20px;}
+#main > section#boosted ul li > img {width: 100%;}
+#main > section#boosted ul li.text {}
+#main > section#boosted ul li.text > h2 {font-size: 32px; line-height: 1.2; text-align: left; padding-bottom: 20px;}
+#main > section#boosted ul li.text > p {line-height: 1.5; text-align: left; padding-bottom: 20px;}
+#main > section#boosted ul li.text > a.btn{display: inline-block; text-align: left;}
+
+#main > section#shop3 {width: 100%;}
+#main > section#shop3 ul {overflow: hidden;}
+#main > section#shop3 ul li {position: relative; width: 100%; height: 480px; display: block; overflow: hidden; background: #000000;}
+#main > section#shop3 ul > li a > img {position: absolute; left: 0; top: 0; display: block; width: 100%; opacity: 0.7; transition: all 0.3s;}
+#main > section#shop3 ul > li a:hover > img {transform: scale(1.1);}
+#main > section#shop3 ul > li > a > em {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: 0px; color: #ffffff; text-align: center;}
+#main > section#shop3 ul > li > a > p {position: absolute; left: 50%; top: 58%; transform: translate(-50%,-50%); font-size: 20px; line-height: 1.25; letter-spacing: 0px; color: #ffffff;} 
+
+#main > section#youtube {width: 100%; height: auto; overflow: hidden;}
+#main > section#youtube ul {text-align: center; padding: 50px 40px;}
+#main > section#youtube ul li {position: relative; left: 0; top: 0; display: block; width: 100%; height: 0; padding-bottom: 56.25%; background: #000000;}
+#main > section#youtube ul > li + li {margin-top: 20px;}
+#main > section#youtube ul > li iframe {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+
+#main > section#accessories {position: relative; width: 100%;}
+#main > section#accessories h2 {text-align: center; font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 30px;}
+#main > section#accessories h2::after {content: ''; position: absolute; left: 50%; top: 66px; transform: translate(-50%,0); width: 70px; height: 2px; background: #cfcfcf;}
+#main > section#accessories .box {overflow: hidden; padding: 20px 0px;}
+#main > section#accessories .box .slide {position: relative; width: 5000px; overflow: hidden; margin: 30px 0px;}
+#main > section#accessories .box .slide li {float: left; margin-right: 4px;  text-align: center; width: calc(2010 / 2010 * 200px);}
+#main > section#accessories .box .slide li:last-child {margin-right: 0px;}
+#main > section#accessories .box .slide li a {display: block;}
+#main > section#accessories .box .slide li a img {display:inline-block; width: 100%;}
+#main > section#accessories .box .slide li a p {color: #ff4a32; line-height: 1.2;}
+#main > section#accessories .box .slide li a span.soldout {color:rgba(0, 0, 0, 0.3);}
+
 
 
 
 /* module */
-
-
-
-
-a.btn {display: inline-block; box-sizing: border-box; width: 50%; line-height: 1.5; padding: calc(0.375em - 1px) 2em; font-size: 14px; text-align: center; border-radius: 35px; background-color: #ff4a32; border: 1px solid transparent; color: #ffffff; transition: background-color 0.2s ease-in-out;}
+a.btn {display: inline-block; box-sizing: border-box; width: auto; line-height: 1.5; padding: calc(0.375em - 1px) 2em; font-size: 14px; text-align: center; border-radius: 35px; background-color: #ff4a32; border: 1px solid transparent; color: #ffffff; transition: background-color 0.2s ease-in-out;}
 a.btn:hover {background-color: #606060;}
 a.btn:hover.click {border: 1px solid rgba(255, 74, 50, 0.7);}
 /*

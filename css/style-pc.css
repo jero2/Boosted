@@ -82,17 +82,13 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #header.on div.header-nav > ul > li + li {margin-left: 10px;}
 #header.on div.header-nav > ul > li:hover {color: #ff4a32;} 
 
-
-
-
-#footer div.pros{position: relative; left: 0; top: 0; padding-top: 15px; padding-bottom: 35px; padding-left: 35px; padding-right: 35px; width: 100%; height: auto; background: #000000; color: #ffffff;  overflow: hidden;}
-#footer div.pros ul {text-align: center;}
-#footer div.pros ul > li {width: 20%; padding: 10px; display: inline-block;}
-#footer div.pros ul > li {float: left;}
-#footer div.pros ul > li + li {margin-left: 20px;}
-#footer div.pros ul > li img {width: 90px;}
-#footer div.pros ul > li em {font-size: 32px; font-weight: 700; line-height: 1.125; display: block; margin-top: 10px; margin-bottom: 24px;}
+#footer div.pros {position: relative; left: 0; top: 0; width: 100%; height: auto;  background: #000000; color: #ffffff;  overflow: hidden;}
+#footer div.pros ul {text-align: center; padding: 20px 0px; }   
+#footer div.pros ul > li {width: 20%; height: 100%; margin: 2%; display: inline-block;vertical-align: top; }
+#footer div.pros ul > li img {width: 80px;}
+#footer div.pros ul > li em {display: block; font-size: 32px; font-weight: 700; line-height: 1.125;  margin-top: 10px; margin-bottom: 24px;}
 #footer div.pros ul > li p {line-height: 1.5;}
+
 
 #footer div.explain {position: relative; left: 0; top: 0; width: 100%; height: 280px;  padding-top: 15px; padding-bottom: 35px; overflow: hidden; background: #f7f7f7;}
 #footer div.explain > img {position: absolute; left: 70px; top: 58px; transition: all 0.5s;}
@@ -123,43 +119,42 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 /*main*/
 
 #main > section#main-visual {position: relative; left: 0; top: 0; width: 100%; height: 800px; margin-top: 70px; overflow: hidden; background: url(../img/main/main.png) center center no-repeat; background-size: cover;}
-#main > section#main-visual h2 {position: absolute; left: 50%; top:8%; transform: translate(-50%, 0); font-size: 45px; font-weight: 700; line-height: 1.125; text-align: center; background: pink;}
-#main > section#main-visual p {position: absolute; left: 50%; top:16%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center; background:tomato;}
-#main > section#main-visual ul {position: absolute; left: 50%; top:20%; transform: translate(-50%, 0); background: lightgreen; overflow: hidden;}
+#main > section#main-visual h2 {position: absolute; left: 50%; top:8%; transform: translate(-50%, 0); font-size: 45px; font-weight: 700; line-height: 1.125; text-align: center; }
+#main > section#main-visual p {position: absolute; left: 50%; top:16%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center; }
+#main > section#main-visual ul {position: absolute; left: 50%; top:20%; transform: translate(-50%, 0); overflow: hidden;}
 #main > section#main-visual ul li {float: left;}
 #main > section#main-visual ul li + li {margin-left: 12px;}
 
 #main > section#companys {position: relative; left: 0; top: 0; width: 100%; text-align: center; background: black;}
-#main > section#companys ul {display: inline-block; overflow: hidden; margin: 18px 0; background: tomato;}
+#main > section#companys ul {display: inline-block; overflow: hidden; margin: 18px 0; }
 #main > section#companys ul li {float: left;}
 #main > section#companys ul li + li {margin-left: 100px;}
 
-#main > section#looking {position: relative; left: 0; top: 0; width: 100%; text-align: center; padding-bottom: 20px; background: pink;}
-#main > section#looking::after {content: ''; position: absolute; left: 50%; top: 140px; transform: translate(-50%,0); width: 70px; height: 2px; background: #cfcfcf;}
-#main > section#looking h2 {font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 50px; background: lightgray;}
+#main > section#looking {position: relative; left: 0; top: 0; width: 100%; text-align: center; padding-bottom: 20px;}
+#main > section#looking::after {content: ''; position: absolute; left: 50%; top: 18%; transform: translate(-50%,0); width: 70px; height: 2px; background: #cfcfcf;}
+#main > section#looking h2 {font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 50px;}
 #main > section#looking p {font-size: 15px; font-weight: 400; padding: 0 360px; margin: 16px 0; }
 #main > section#looking em {font-size: 15px; font-weight: 500;}
-
-#main > section#looking ul.shop2 {display: inline-block; overflow: hidden; margin-top: 74px; background: skyblue;}
-#main > section#looking ul.shop2 li {float: left; position: relative;  width: 580px; height: 580px; overflow: hidden; background: lightcoral; }
+#main > section#looking ul.shop2 {display: inline-block; overflow: hidden; width: 90%; height: 580px;  margin-top: 74px; text-align: center;}
+#main > section#looking ul.shop2 li {position: relative; width: 45%; height: 100%; overflow: hidden; display: inline-block;}
 #main > section#looking ul.shop2 li + li {margin-left:  20px;}
 #main > section#looking ul.shop2 li > a {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); height: 100%; }
 #main > section#looking ul.shop2 li > a img {height: 100%; transition: all 0.3s; opacity: 0.8;}
 #main > section#looking ul.shop2 li > a span {position: absolute; left: 50%; top: 42%; transform: translate(-50%,-50%); height: 50px;}
-#main > section#looking ul.shop2 li > a em{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #ffffff; line-height: 1.5; font-weight: 700; font-size: 25px; letter-spacing: 0px;}
-#main > section#looking ul.shop2 li > a p {position: absolute; left: 50%; top: 54%; transform: translate(-50%,-50%); color: #ffffff; line-height: 1.125; font-size: 17px; width: 100%;}
+#main > section#looking ul.shop2 li > a em{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #ffffff; line-height: 1.5; font-weight: 700; font-size: 25px; letter-spacing: 0px; opacity: 1;}
+#main > section#looking ul.shop2 li > a p {position: absolute; left: 50%; top: 54%; transform: translate(-50%,-50%); color: #ffffff; line-height: 1.125; font-size: 17px; width: 100%; opacity: 1;}
 #main > section#looking ul.shop2 li > a:hover img {height: 110%; }
 
 #main > section#skateboards {position: relative; left: 0; top: 0; height: 720px; background: url(../img/main/boosted_shop_main.png) center center no-repeat; background-size: cover; overflow: hidden;}
-#main > section#skateboards span {position: absolute; left: 50%; top:8%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center; background:tomato;}
-#main > section#skateboards h2 {position: absolute; left: 50%; top:12%; transform: translate(-50%, 0); font-size: 45px; font-weight: 700; line-height: 1.125; text-align: center; background: pink;}
-#main > section#skateboards p {position: absolute; left: 50%; top:22%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center; background:tomato;}
+#main > section#skateboards span {position: absolute; left: 50%; top:8%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center;}
+#main > section#skateboards h2 {position: absolute; left: 50%; top:12%; transform: translate(-50%, 0); font-size: 45px; font-weight: 700; line-height: 1.125; text-align: center;}
+#main > section#skateboards p {position: absolute; left: 50%; top:22%; transform: translate(-50%, 0); font-weight: 700; line-height: 1.25; letter-spacing: 1px; text-align: center;}
 #main > section#skateboards a.btn {position: absolute; left: 50%; top:28%; transform: translate(-50%, 0);} 
 
 
-#main > section#boosted {position: relative; left: 0; top: 0;padding: 40px 40px; background: pink;}
-#main > section#boosted ul {display: inline-block; line-height: 100%; overflow: hidden; background: tomato;}
-#main > section#boosted ul li {width: 30.33%; vertical-align: middle; display: inline-block; background: lime;}
+#main > section#boosted {position: relative; left: 0; top: 0;padding: 40px 40px;}
+#main > section#boosted ul {display: inline-block; line-height: 100%; overflow: hidden;}
+#main > section#boosted ul li {width: 30.33%; vertical-align: middle; display: inline-block;}
 #main > section#boosted ul li + li {margin-left: 20px;}
 #main > section#boosted ul li > img {width: 100%;}
 #main > section#boosted ul li.text {margin-left: 30px;}
@@ -168,28 +163,30 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #main > section#boosted ul li.text > a.btn{display: inline-block; text-align: left;}
 
 
+#main > section#shop3 {width: 100%;}
+#main > section#shop3 ul {height: 480px; overflow: hidden;}
+#main > section#shop3 ul li {position: relative; width: calc(100%/3); height: 480px; background: #000000;}
+#main > section#shop3 ul > li {float: left; overflow: hidden;}
+#main > section#shop3 ul > li a > img {position: absolute; left: 50%; top: 0; transform: translate(-50%,0); display: block; width: 100%; height: 100%; opacity: 0.7; transition: all 0.3s;}
+#main > section#shop3 ul > li a:hover > img {width: 110%; height: 110%;}
+#main > section#shop3 ul > li > a > em {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%; font-size: 25px; font-weight: 700; letter-spacing: 0px; color: #ffffff; text-align: center;}
+#main > section#shop3 ul > li > a > p {position: absolute; left: 50%; top: 58%; transform: translate(-50%,-50%); font-size: 17px; line-height: 1.25; letter-spacing: 0px; color: #ffffff;} 
 
-#main > section#shop3 {width: 100%; background: orange;}
-#main > section#shop3 ul {overflow: hidden; background: tomato;}
-#main > section#shop3 ul li {float: left; width: calc(100%/3); background: lime;}
-#main > section#shop3 ul li a {position: relative; left: 0; top: 0; text-align: center;}
-#main > section#shop3 ul li >a img {width: 100%;}
-#main > section#shop3 ul li >a em {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100%; font-size: 25px; font-weight: 700; letter-spacing: 0px; color: #ffffff; }
-#main > section#shop3 ul li >a p {position: absolute; left: 50%; top: 230%; transform: translate(-50%,-50%); width: 100%; font-size: 17px; line-height: 1.25; letter-spacing: 0px; color: #ffffff; background: rebeccapurple; }
 
-#main > section#youtube {text-align: center; width: 100%; height: auto; overflow: hidden; background: pink;}
-#main > section#youtube ul {display: inline-block; width: 90%; text-align: center;  margin: 20px;  background: tomato;}
-#main > section#youtube ul > li {display: inline-block; position: relative; left: 0; top: 0; width: 40%; max-width: 560px; height: 0; max-height: 315px; padding-bottom: 22.5%; background: lime;}
+
+#main > section#youtube {text-align: center; width: 100%; height: auto; overflow: hidden;}
+#main > section#youtube ul {display: inline-block; width: 90%; text-align: center;  margin: 20px;}
+#main > section#youtube ul > li {display: inline-block; position: relative; left: 0; top: 0; width: 40%; max-width: 560px; height: 0; max-height: 315px; padding-bottom: 22.5%;}
 #main > section#youtube ul > li + li {margin-left: 20px;}
 #main > section#youtube ul > li iframe {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
 
 
-#main > section#accessories {position: relative; width: 100%; box-sizing: border-box; border: 1px solid #e0e0e0; background: orange;}
-#main > section#accessories h2 {text-align: center; font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 30px; background: lightgray;}
-#main > section#accessories h2::after {content: ''; position: absolute; left: 50%; top: 90px; transform: translate(-50%,0); width: 70px; height: 2px; background: #cfcfcf;}
+#main > section#accessories {position: relative; width: 100%;}
+#main > section#accessories h2 {text-align: center; font-size: 32px; font-weight: 700; line-height: 1.125; margin-top: 30px;}
+#main > section#accessories h2::after {content: ''; position: absolute; left: 50%; top: 66px; transform: translate(-50%,0); width: 70px; height: 2px; background: #cfcfcf;}
 
-#main > section#accessories .box {overflow: hidden; padding: 20px 0px; background: tomato;}
-#main > section#accessories .box .slide {position: relative; width: 5000px; overflow: hidden; margin: 30px 0px; background: lime;}
+#main > section#accessories .box {overflow: hidden; padding: 20px 0px;}
+#main > section#accessories .box .slide {position: relative; width: 5000px; overflow: hidden; margin: 30px 0px;}
 #main > section#accessories .box .slide li {float: left; margin-right: 4px;  text-align: center; width: calc(2010 / 2010 * 200px);}
 #main > section#accessories .box .slide li:last-child {margin-right: 0px;}
 #main > section#accessories .box .slide li a {display: block;}
@@ -201,19 +198,8 @@ body {font-family: 'Roboto', sans-serif; font-size: 15px; font-weight: 400; colo
 #main > section#accessories .control a.next {position: absolute; top: 0; width: 30px; height: 100%;}
 #main > section#accessories .control a.prev {left: 0;}
 #main > section#accessories .control a.next {right: 0;}
-#main > section#accessories .control a > i {font-size: 30px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: rgba(255, 255, 255, 0.75);}
-/*
-div.banner-slide .control a.prev,
-div.banner-slide .control a.next {position: absolute; top: 0; width: 30px; height: 100%;}
-div.banner-slide .control a.prev {left: 0;}
-div.banner-slide .control a.next {right: 0;}
-div.banner-slide .control a > img {width: 15px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-div.banner-slide .control > a.play {position: absolute; right: 40px; bottom: 5px; color: #ffffff; border: 1px solid #e0e0e0; border-radius: 3px; padding: 3px; background-color: rgba(0, 0, 0, 0.1);}
-div.banner-slide .control > a.play i {display: none;}
-div.banner-slide .control > a.play i:first-child {display: block;}
-div.banner-slide .control > a.play.on i:first-child {display: none;}
-div.banner-slide .control > a.play.on i + i {display: block;}
-*/
+#main > section#accessories .control a > i {font-size: 30px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: rgba(0, 0, 0, 0.75);}
+
 
 
 /* module */
