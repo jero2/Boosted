@@ -6,3 +6,5 @@
 [🖐🍞] git add .
 [🖐🍞] git commit -m 'adsfadf [+] asdfadf'
 [🖐🍞] git push origin master
+
+지금은 test중입니다
